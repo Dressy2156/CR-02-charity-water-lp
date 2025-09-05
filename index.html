@@ -1,47 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- index.html -->
+<!DOCTYPE html> <!-- Tells the browser this is an HTML5 document -->
+<html lang="en"> <!-- The root element of the page, language is English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on mobile devices -->
+  <title>Charity: Water Landing Page</title> <!-- The title shown in the browser tab -->
+  <link rel="stylesheet" href="styles.css"> <!-- Links to the CSS file for styling -->
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <!-- Logo at the top left with spacing -->
+  <div class="logo-top-left">
+    <!-- Charity Water logo image -->
+    <img src="img/cw_logo-2.png" alt="Charity Water Logo" class="logo">
+  </div>
+  <!-- Background image for the whole page -->
+  <div class="hero-image-bg"></div>
+  <!-- The header section contains the main content at the top of the page -->
+  <header class="hero">
+    <div class="hero-text">
+      <!-- Main headline for the page -->
+      <h1>Give Water.<br>Leave a Legacy.</h1>
+      <!-- Subheadline with a short message -->
+      <p class="subheadline">
+        Even $10 can transform a life today—and together, our generation is 
+        building a future where no one drinks dirty water.
+      </p>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+      <!-- Donation form for users to select an amount and donate -->
+      <form class="donation-box">
+        <!-- Title for the donation box -->
+        <p class="donate-title">Donate as little as $5</p>
+        <!-- Buttons for selecting donation amounts -->
+        <div class="donation-buttons">
+          <!-- Each label contains a radio button and a visible amount -->
+          <label>
+            <input type="radio" name="amount" value="5">
+            <span>$5</span>
+          </label>
+          <label>
+            <input type="radio" name="amount" value="10" checked>
+            <span>$10</span>
+          </label>
+          <label>
+            <input type="radio" name="amount" value="20">
+            <span>$20</span>
+          </label>
+          <label>
+            <input type="radio" name="amount" value="40">
+            <span>$40</span>
+          </label>
+          <label>
+            <input type="radio" name="amount" value="100">
+            <span>$100</span>
+          </label>
+          <label>
+            <input type="radio" name="amount" value="other">
+            <span>Other</span>
+          </label>
         </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+        <!-- Button to submit the donation form -->
+        <button type="submit" class="cta">Start Donating!</button>
+        <!-- Text showing the impact of a donation -->
+        <p class="impact-text">
+          Your $10 will give water to 2 people for the year. 100% of funds go straight to the people in need.
+        </p>
+      </form>
+    </div>
+    <!-- Remove the hero-image div from here since the background is now set for the whole page -->
+  </header>
+</body>
+</html>
 </body>
 </html>
