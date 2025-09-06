@@ -3,7 +3,7 @@
 /* Set default margin and font for the whole page, and background color */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Proxima Nova', Arial, sans-serif;
   background-color: #000; /* Black background */
   color: #FFF7E1; /* Soft off-white text color for all text */
 }
@@ -22,11 +22,26 @@ body {
   display: flex;
   flex-direction: column; /* Stack children vertically */
   justify-content: center; /* Center content vertically */
+  margin-left: 200px; /* Move everything a little to the right */
 }
 
-/* Logo image spacing */
+/* Logo image spacing and size */
 .logo {
   margin-bottom: 0;
+  width: 48px;      /* Set logo width to keep it consistent */
+  height: auto;     /* Keep aspect ratio */
+  vertical-align: middle; /* Align with text */
+}
+
+/* Style for the text next to the logo */
+.logo-text {
+  color: #FFF7E1; /* Same color as other text */
+  font-size: 1.1rem; /* Slightly smaller than the logo */
+  margin-left: 10px; /* Space between logo and text */
+  vertical-align: middle; /* Align text with the logo */
+  font-family: 'Proxima Nova', Arial, sans-serif; /* Match page font */
+  font-weight: bold; /* Make it stand out */
+  letter-spacing: 1px; /* Add a little space between letters */
 }
 
 /* Logo at the top left with spacing */
@@ -102,6 +117,13 @@ h1 {
   display: block;
   border-radius: 6px;
   padding: 0.75rem;
+  /* Add transition for smooth color change */
+  transition: background 0.2s ease;
+}
+
+/* Make the selected amount button a little darker when you hover over it */
+.donation-buttons input:checked + span:hover {
+  background: #e6b800; /* Slightly darker yellow */
 }
 
 /* Style for the main call-to-action button */
@@ -115,6 +137,11 @@ h1 {
   cursor: pointer;
   width: 100%;
   margin-bottom: 1rem;
+}
+
+/* Make the button a little darker when you hover your mouse over it */
+.cta:hover {
+  background: #e6b800; /* Slightly darker yellow */
 }
 
 /* Impact text styling */
